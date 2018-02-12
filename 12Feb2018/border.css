@@ -1,0 +1,20 @@
+.borderStyle{
+    width: 500px;
+    height: 500px;
+
+    /* border color */
+    border-color: black;
+    /* border style */
+    border-style: solid;
+    border-style: none;
+    border-style: hidden;
+    border-style: dotted;
+    border-style: dashed;
+/* border width */
+border-width: thin;
+border-width: medium;
+border-width: thick;
+border-width: 1px;
+/* border bottom */
+border-bottom-width: 10px;
+}
