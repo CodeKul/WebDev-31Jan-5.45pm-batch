@@ -1,0 +1,35 @@
+div{
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+p{
+    color: rgb(97, 3, 3);
+    background-color: yellow;
+    /* text-align: left; */
+    /* text-align: right; */
+    /* text-align: center; */
+    text-align: justify;
+/* decoration */
+    text-decoration: underline;
+    text-decoration: none;
+    text-decoration: line-through;
+    text-decoration: overline;
+    /* transform */
+    text-transform: uppercase;
+    text-transform: capitalize;
+    text-transform: lowercase;
+    text-indent: 50px;
+
+    /* letter-spacing: 10px; */
+    line-height: 1em;
+    word-spacing: 1em;
+
+    /* direction: rtl; */
+
+}
+
+h1{
+    text-shadow: 3px 2px rgb(29, 24, 24);
+}
