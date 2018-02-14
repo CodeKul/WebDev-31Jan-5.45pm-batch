@@ -1,0 +1,29 @@
+p{
+    border: 5px solid green;
+    outline-style: solid;
+    outline-style: dotted;
+    outline-style: dashed;
+    outline-style: solid;
+    outline-style: double;
+    outline-style: groove;
+    outline-style: ridge;
+    outline-style: inset;
+    outline-style: outset;
+    /* outline-style: none;
+    outline-style: hidden; */
+    outline-color: rgb(0, 255, 98);
+    outline-width: 50px;
+    outline-offset: 5px;
+    /* styyle */
+    outline: dotted; 
+    /* style color */
+    outline: dotted blue;
+    /* size style color */
+    outline: 10px dotted red;
+    outline: thick dotted red;
+    outline: thin dotted red;
+}
+
+div{
+    padding: 70px;
+}
