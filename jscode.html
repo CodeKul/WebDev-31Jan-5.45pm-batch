@@ -23,28 +23,95 @@
         alert('My first js code');*/
         // alert('My first js code');
 
-    
-            var num1 = 7;
-            var num2 = 5 + 5;
-            var num3 = 10 - 5;
-            num1 = 10 * 5;
-            num1 = 10 / 5;
-            num1 = 11 % 5;
-           // console.log('num1: '+ num1 +'  num2: ' + num2);
-            ;
 
+        var num1 = 7;
+        var num2 = 5 + 5;
+        var num3 = 10 - 5;
+        num1 = 10 * 5;
+        num1 = 10 / 5;
+        num1 = 11 % 5;
+        // console.log('num1: '+ num1 +'  num2: ' + num2);
+        // num1 = num1 + 7;
+
+        num1 = 10;
+        // num1--;
+        num1 %= 2;
+        console.log('Result : ', num1);
         document.write(num1);
+
+        var name = "Codekul";
+        name += " , Institute  " + num1 + " num1 ";
+        console.log('Result : ', name);
+        document.write(name);
+        //Comparison operator
+
+        var first = 5;
+        var second = 10;
+        var third = '5';
+
+        var cmpResult;
+
+        cmpResult = (first == second);
+        cmpResult = (first == third);
+        cmpResult = (first === third);
+        cmpResult = (first > second);
+        cmpResult = (first < second);
+        cmpResult = (first <= third);
+        cmpResult = (first >= third);
+        cmpResult = (first != third);
+        cmpResult = (first != second);
+
+        console.log('Result of Comparison : ', cmpResult);
+
+
+// logical operators
+var a = true;
+var b = false;
+var c = true;
+var d = false;
+
+console.log('Logical and result both false: ', (b && d));
+console.log('Logical and result any one false: ',(a && d));
+console.log('Logical and result both are true: ', (a && c));
+console.log('========================================');
+
+console.log('Logical or result both false: ', (b || d));
+console.log('Logical OR result any one true: ',(a || d));
+console.log('Logical OR result both are true: ', (a || c));
+console.log('========================================');
+console.log('Logical not for true', !a);
+console.log('Logical not for false', !b);
+
+
+
+//typeof operators
+var num= 10;
+var str = '100';
+
+
+console.log('========================================');
+console.log('Type of number data: ', typeof(num));
+console.log('Type of string data: ', typeof(str));
+
+//BITWISE OPERATORS
+console.log('========================================');
+    var bit_a= 5;
+    var bit_b = 10;
+    var bit_c = 1;
+    console.log('Bitwise and result : ', (bit_a & bit_b));
+    console.log('Bitwise or result : ', (bit_a & bit_c));
+
         // alert(num1);
         function changePara(someText) {
             var num1;
             num1 = 7;
-            num1 = 5+5;
+            num1 = 5 + 5;
             var check = confirm("Press a button!");
-            console.log('confirm val: ', check);
-           // var person = prompt("Please enter your name");
-//console.log('Person name', person);
+            // console.log('confirm val: ', check);
+            // var person = prompt("Please enter your name");
+            //console.log('Person name', person);
             document.getElementById('myPara').innerHTML = num1;
-            
+
             console.log('Successfully written', num1);
 
         }
