@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Condition</title>
+</head>
+
+<body>
+    <strong>If Statement</strong>
+    <p>Which one is greater</p>
+    <input id="val1" type="number">
+    <input id="val2" type="number">
+
+    <button onclick="greater()">Greater Num????</button>
+    <button onclick="grade()">Grade</button>
+    <button onclick="smaller()">Smaller Num???</button>
+    
+    <div>
+Answer is:             <span id="greaterNum"></span>
+    </div>
+    <!-- <strong>If-else Statement</strong>
+    <strong>Ternary Operator</strong> -->
+    <script>
+        function smaller(){
+            // console.log()'inside function;
+            var num1 = document.getElementById('val1').value;
+            var num2 = document.getElementById('val2').value;
+            document.getElementById('greaterNum').innerHTML = '';
+            var answer;
+
+            answer = (num1==num2) ? 'Same' : ((num1>num2) ? num1 : num2);
+         
+            // answer = (num1==num2) ? 'Same' : '';
+            // console.log('For equal:',answer);
+            
+            // answer = (num1>num2) ? num1 : num2;
+            // console.log('For smaller num2:',answer);
+            // answer = (num1<num2) ? num1 : num2;
+            // console.log('For smaller num1:',answer);
+            document.getElementById('greaterNum').innerHTML = answer;
+        }
+        function grade(){
+            var lb = document.getElementById('val1').value;
+            var ub = document.getElementById('val2').value;
+            document.getElementById('greaterNum').innerHTML = '';
+            if(lb >= 70 && ub<=100)
+            {
+                document.getElementById('greaterNum').innerHTML = 'Distinction';
+            }
+            else{
+                document.getElementById('greaterNum').innerHTML = 'No Distinction';
+            }
+        }
+function greater(){
+    console.log('in a function');
+    var num1 = document.getElementById('val1').value;
+    console.log('num1', num1);
+    var num2 = document.getElementById('val2').value;
+    console.log('num2', num2);
+    document.getElementById('greaterNum').innerHTML = '';
+if(num1>num2){
+
+    document.getElementById('greaterNum').innerHTML = num1;
+}
+
+if(num2>num1){
+    document.getElementById('greaterNum').innerHTML = num2;
+}
+if(num1 == num2){
+    document.getElementById('greaterNum').innerHTML = 'Similar number';
+}
+
+}
+    </script>
+</body>
+
+</html>
