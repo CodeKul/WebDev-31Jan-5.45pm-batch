@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Errors</title>
+</head>
+<body>
+        
+            <input type="text" id="regExp">
+            <button onclick="check()">Check Number</button>
+            <p id="demo">  </p>
+        <script>
+            function check(){
+                try{
+                    var str;
+                    str = document.getElementById('regExp').value;
+                var result = /[0-9]/.test(str);
+                if(result == false) throw "Not a number";
+                }
+                catch(err)
+                {
+                    document.getElementById("demo").innerHTML = err;
+                }
+            }
+
+        // try {
+        //     adddlert("Welcome guest!");
+        // }
+        // catch(err) {
+        //     document.getElementById("demo").innerHTML = err.message;
+        // }
+        </script>
+</body>
+</html>
