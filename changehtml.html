@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Change HTML</title>
+</head>
+<body>
+   <input type="text" id="num" placeholder="Enter number">
+   <input type="text" id="num1">
+   <p id="demo">This is demo para</p>
+   <a id="codekul">Codekul</a>
+   <button onclick="change()">OK</button> 
+   <script>
+
+   function change(){
+document.getElementById('codekul').setAttribute('href', 'http://www.codekul.com/');
+
+       var str;
+       str = document.getElementById('num').value;
+    //    document.getElementById('demo').innerHTML = str;
+
+       document.getElementById('num').placeholder = 'Enter name';
+       document.getElementById('num1').setAttribute('placeholder' , 'Enter Name');
+       document.getElementById('demo').style.color = 'red';
+       var para1 = document.createElement('h1');
+       var node = document.createTextNode('This is dynamic para');
+        para1.appendChild(node);
+       console.log('newPara', para1);
+    //    para1.appendChild(node);
+       document.body.appendChild(para1);
+
+   }
+   </script>
+</body>
+</html>

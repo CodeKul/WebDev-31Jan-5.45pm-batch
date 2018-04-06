@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+</head>
+<body>
+    <p id="demo">My First Project</p>
+    <p>My First Project</p>
+    <p class="test">My First Project</p>
+    <p>My First Project</p>
+    <p class="test">My First Project</p>
+<a class="test" href="#">MyLink</a>
+    <button onclick="check()">Ok</button>
+    <script>
+    function check(){
+        var obj = document.getElementsByTagName('p').length;
+        // console.log(obj);
+
+        var objClass = document.getElementsByClassName('test').length;
+        console.log(objClass);
+    }
+    </script>
+</body>
+</html>
