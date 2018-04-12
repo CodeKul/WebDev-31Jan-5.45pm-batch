@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+</head>
+<body>
+    <p id="para">This is some text</p>
+    <button id="change">Change</button>
+
+    <p id="eventListener">Demo of event listener</p>
+    <button id="changeText">Change</button>
+
+    <p id='date'></p>
+    <script>
+    document.getElementById('change').onclick = change;
+    function change(){
+        document.getElementById('para').innerHTML = 'This is changed text';
+    }
+
+    document.getElementById('changeText').addEventListener('click',changeTxt);
+    document.getElementById('changeText').addEventListener('mouseover',changeCss);
+    document.getElementById('changeText').addEventListener('mouseout',changeCss1);
+
+    function changeTxt(){
+        document.getElementById('eventListener').innerHTML = 'Demo successful with click...!!!';
+    }
+
+    function changeCss(){
+        document.getElementById('eventListener').innerHTML = 'Demo successful...!!!';
+        document.getElementById('eventListener').style.color = 'red';
+    }
+
+    function changeCss1(){
+        document.getElementById('eventListener').innerHTML = 'Demo successful again...!!!';
+        document.getElementById('eventListener').style.color = 'green';
+    }
+
+ window.addEventListener('resize',function(){
+     var d = new Date();
+     console.log('Time :', d.getTime())
+     console.log('Hour :', d.getHours())
+     console.log('Min :', d.getMinutes())
+     console.log('Sec :', d.getSeconds())
+     document.getElementById('date').innerHTML = d;
+     document.getElementById('date').innerHTML = d.getHours() + ':' + d.getMinutes() +':' + d.getSeconds();
+ })
+    </script>
+</body>
+</html>

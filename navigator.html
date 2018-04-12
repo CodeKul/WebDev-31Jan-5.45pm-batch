@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigator</title>
+</head>
+<body>
+    <div id="demoDiv">
+
+            <!-- <p id="demoPara1">This is demo text.</p> -->
+            <img src="nature.jpg">
+            <p id="demoPara2">This is demo text.</p>
+    </div>
+    
+    <button onclick="showVal()">Check</button>
+    <script>
+        function showVal(){
+            for(i=0; i<=2; i++)
+            {
+                console.log(document.getElementById('demoDiv').childNodes[i].nodeType);
+            }
+            console.log(window.location.href);
+            console.log(window.location.pathname);
+            console.log(window.location.protocol);
+            console.log(screen.height);
+            console.log(screen.width);
+            console.log('Function called');
+// console.log(document.getElementById('demoDiv').firstChild.nodeType);
+
+// console.log(document.getElementById('demoDiv').childNodes[1].nodeType);
+// console.log(document.nodeType);
+        }
+    </script>
+</body>
+</html>
