@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo</title>
+</head>
+<body>
+    <p id="idName">Access with id</p>
+    <p class="className" style="color: green;">Access with classname</p>
+    <h1 class="className" style="color: green;">Access with classname</h1>
+    <a id="link">Codekul</a>
+    <input type="text" id="enterText">
+    <h1>Access with tag name</h1>
+    <button onclick="changeCol()">OK</button>
+    <script>
+    function changeCol(){
+        document.getElementById('idName').style.color = 'red';
+        document.getElementById('enterText').setAttribute('placeholder','Enter Name');
+        // var length = document.getElementByClassName('className').length;
+        // document.getElementsByTagName('P').style.color = 'blue';
+        document.getElementById('link').setAttribute('href','www.codekul.com');
+        console.log('Length',length);
+        // document.getElementsByTagName('H1').style.color = 'blue';
+
+
+  var elements = document.getElementsByClassName('className'); i, len;
+  
+  for (i = 0, len = elements.length; i < len; i++) {
+    elements[i].style.color = 'red';
+  }
+    }
+    </script>
+
+</body>
+</html>
