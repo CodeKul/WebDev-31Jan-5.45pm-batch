@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQUERY</title>
+</head>
+
+<body>
+    <p id="myParaId">This is  <strong>Codekul</strong> having id</p>
+    <p class="myParaClass">This is having class</p>
+    <p>This is for 'this'</p>
+    <p>This is <strong>Codekul</strong> some text</p>
+    <button id="get">Get Value</button>
+    <button id="set">Set Value</button>
+    <input type="text">
+    <div style="height: 200px; width: 200px; position: relative; background-color: pink;"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            
+
+$('#get').click(function(){
+//     $('div').animate({
+// left: '300px'
+//     },5000);
+
+console.log("First jquery");
+            var text = $('#myParaId').text();
+            console.log("Text : ", text);
+
+            var html = $('#myParaId').html();
+            console.log("HTML : ", html);
+
+            var val = $('input').val();
+            console.log("Val : ", val);
+});
+
+
+$('#set').click(function(){
+//     $('div').animate({
+// left: '300px'
+//     },5000);
+
+console.log("First jquery");
+            var text = $('#myParaId').text("This is new Para");
+            console.log("Text : ", text);
+
+            var html = $('.myParaClass').html("This is new <strong>Para</strong>");
+            console.log("HTML : ", html);
+
+            var val = $('input').val(function(){
+                return "codekul";
+            });
+            console.log("Val : ", val);
+});
+
+
+        });
+    
+        $('p').on({
+            mouseenter : function(){
+                $(this).css("background-color","green");
+                console.log("Mouse Enter");
+            },
+            mouseleave : function(){
+                $(this).css("background-color","yellow");
+                console.log("Mouse Leave");
+                $(this).hide(2000);
+            },
+            click : function(){
+                $(this).css("background-color","gray");
+                console.log("Click");
+            },
+
+            dblclick: function(){
+                $(this).css("background-color","pink");
+                console.log("Double Click");
+            }
+         } );
+
+
+    </script>
+
+
+</body>
+
+</html>
